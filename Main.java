@@ -9,6 +9,7 @@ public class Main {
         System.out.println("For Momentum, press 3");
         System.out.println("For Force, press 4");
         System.out.println("For Workdone, press 5");
+        System.out.println("For Distance, press 7")
 
         Scanner sc = new Scanner(System.in);
         int choice = sc.nextInt();
@@ -50,6 +51,13 @@ public class Main {
                 System.out.println("Input Distance = ");
                 double distance = sc.nextDouble();
                 System.out.println(calculator.workDone(force,distance));
+                break;
+             case 7:   
+                System.out.println("Input Speed = ");
+                double force = sc.nextDouble();
+                System.out.println("Input Time = ");
+                double distance = sc.nextDouble();
+                System.out.println(calculator.Distance(speed,time));
                 break;
         }
 
